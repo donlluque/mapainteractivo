@@ -1,0 +1,54 @@
+{
+  "name": "@donlluque/mapainteractivo",
+  "version": "1.2.6",
+  "description": "Mapa interactivo ",
+  "main": "lib/MapaInteractivo.min.js",
+  "scripts": {
+    "build": "webpack --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donlluque/mapainteractivo"
+  },
+  "bugs": {
+    "url": "https://github.com/donlluque/mapainteractivo/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "9.1.3",
+    "babel-plugin-add-module-exports": "1.0.4",
+    "babel-preset-es2015": "6.24.1",
+    "chai": "4.3.10",
+    "css-loader": "^6.8.1",
+    "mocha": "10.2.0",
+    "style-loader": "^3.3.3",
+    "url-loader": "^4.1.1",
+    "webpack": "5.88.2",
+    "yargs": "17.7.2"
+  },
+  "keywords": [
+    "webpack",
+    "es6",
+    "leaflet"
+  ],
+  "dependencies": {
+    "d3-queue": "^3.0.7",
+    "es6-promise": "^4.2.8",
+    "exports-loader": "^4.0.0",
+    "imports-loader": "^4.0.1",
+    "isomorphic-fetch": "^3.0.0",
+    "leaflet": "^1.9.4",
+    "leaflet-heatmap": "^1.0.0",
+    "leaflet.heat": "^0.2.0",
+    "leaflet.markercluster": "^1.5.3",
+    "lodash": "^4.17.21",
+    "proj4": "^2.9.0"
+  },
+  "author": "donlluque",
+  "license": "public"
+}
